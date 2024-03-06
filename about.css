@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    min-height:60px;
+    width:100%;  
+    text-align: center; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 100%;
+    /* min-height: 100vh; */
+}
+video{
+    width: 100%;
+    height:100vh ;
+    background-color:rgb(142, 140, 140);  
+    filter: brightness(100%); 
+}
+.vidio-contain{
+    width: 100%;
+    height: 100vh;
+    background-color:gainsboro;
+    border: 1px solid black ;
+}
+.vidio-contain video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.a{
+    text-decoration:none ;
+    color:black;
+}
+.logo{
+    height:50px ;
+    width:50px ;
+    border-radius:50% ;
+}
+.header{
+    width: 100%;  
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 5px 45px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.right-head{
+    display: flex;
+    font-style:oblique; 
+    gap: 20px;
+}
+.right-head button{
+    padding: 5px;
+    width: 120px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 18px;
+}
+i{
+    font-size: 40px;
+    color:white;
+}
+.but1:hover{
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid white ;
+
+}
+.header input:checked~ .right-head{
+      background-color:orangered;
+      left: 0;
+      transition: 2s;
+}
+.input{
+    display: none;
+}
+.header i{
+    display:none;
+}
+.box{
+    background-color: darkcyan;
+    position: absolute;
+    top:67%;
+    width: 100%;
+    height:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px) {
+    .right-head{
+        position: fixed;
+        left: -100%;
+        transition: 2s;
+        background-color:cadetblue;
+        top: 63px;
+        width: 100%;
+        z-index: 999;
+        flex-direction: column;
+        height: 90vh;
+        display: grid;
+        justify-content: center;
+
+    }
+    .vidio-contain{
+        width: 100%;
+        height: 100vh;
+    }
+    .header i{
+        display: inline;
+    }
+}
+/* .....................................................container1.................................... */
+.container1{
+    min-height:100vh ;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section{
+    width: 50%;
+    min-height: 500px;
+    padding: 10px;
+}
+aside{
+    width: 50%;
+    background-color: gainsboro;
+    min-height:500px ;
+    padding: 20px;
+    text-align: center;
+    object-fit: contain;
+}
+img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+}
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:7px 5px 5px black ;
+}
+.about h2{
+    font-size:35px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+    height:70px ;
+}
+.about .prg{
+    font-size: 20px;
+    color:white;
+    padding: 10px;
+}
+.about p{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 10px;
+}
+.p3{
+    line-height: 20px;
+}
+
+.about button{
+    width:160px ;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orangered;
+}
+@media screen and (max-width:800px) {
+    .container1{
+        min-height: 100vh;
+    }
+    section{ 
+        width:100%;
+        padding:10px;
+        min-height: 100vh;
+    }
+    aside{
+        width: 100%;
+    }
+    .about h2{
+        font-size:30px ;
+        min-height: 90px;
+
+    }
+    .about .prg{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .about p{
+        font-size: 16px;
+        /* padding: 20px; */
+    }
+    .p3{
+        line-height: 20px;
+    }
+    .about button{
+        width:140px ;
+        padding: 8px;
+        font-size:15px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* .............................................container2................................................... */
+.container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 80vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:20px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container2 .box1{
+    width:auto;
+    padding:20px ;
+    justify-content: center;
+    align-items: center;
+    background-color:gainsboro;
+    height:200px ;
+    display: flex;
+    gap:30px;
+}
+.box1 .io{
+    padding:20px ;
+    border-radius: 50%;
+    color: orangered;
+    background-color: white;
+    font-size: 45px;
+
+}
+.box1 p{
+    font-size:20px ;
+    line-height: 30px;
+}
+@media screen and (max-width:900px) {
+    .box1 i{
+        font-size:25px ;
+    }
+    .box p{
+        font-size:15px ;
+        line-height:20px ;
+    }
+    .container2{
+        grid-template-columns: auto;
+        width: auto;
+        min-height:400px ;
+    }
+    
+}
+@media screen and (min-width:320px) and (max-width:500px) {
+    .box1 i{
+        font-size:20px ;
+    }
+    .box p{
+        font-size:10px ;
+        line-height:10px ;
+    }
+    .container2 .box1{
+        grid-template-columns: auto;
+        width: auto;
+        min-height:300px ;
+        padding: 5px;
+        gap:10px ;
+    }
+    
+}
+/* ....................................................container3............................................... */
+.container3{
+    min-height:100vh  ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.section1{
+    width: 50%;
+    min-height:500px ;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    gap:50px ;
+}
+.section2{
+    width: 50%;
+    min-height:500px ;
+    background-color: white;
+    padding:10px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+.res{
+    height:250px ;
+    width: 250px;
+    border-radius: 50%;
+  
+}
+.section1 .res:hover{
+    padding:10px ;
+    border:4px solid black ;
+}
+.ah{
+    color: orangered;
+    font-size: 30px;  
+    min-height: 90px;
+}
+.p4{
+    line-height:25px ;
+    font-size: 20px;
+    color: black;
+}
+.p4:hover{
+    border-radius: 20px;
+}
+@media screen and (max-width:500px) {
+    .container3{
+        flex-direction: column;
+    }
+    .section1{
+        width: 100%;
+    }
+    .section2{
+        width: 100%;
+    }
+   .section1 .res{
+        height:250px ;
+        width: 250px;
+        border-radius:50% ;
+    }
+    .section1{
+        padding: 0;
+        gap:10px;
+        grid-template-columns: auto;
+        display:grid;
+        width: auto;
+    }
+    .ah{
+        font-size:30px ;
+    }
+    .p4{
+        line-height:20px ;
+        font-size: 20px;
+    }
+ }
+ @media screen and (min-width:800px) and (max-width:1200px) {
+    .container3{
+        flex-direction: column;
+    }
+    .section2{
+        width: 50%;
+    }
+   .section1 .res{
+        height:250px ;
+        width: 250px;
+        border-radius:50% ;
+    }
+    .section1{
+        padding: 0;
+        gap:10px;
+        grid-template-columns: auto auto;
+        display:grid;
+        width: auto;
+        gap:30px;
+    }
+    .ah{
+        font-size:35px ;
+    }
+    .p4{
+        line-height:25px ;
+        font-size: 25px;
+    }
+ }
+ @media screen and (min-width:500px) and (max-width:800px) {
+    .container3{
+        flex-direction: column;
+    }
+    .section1{
+        width: 100%;
+    }
+    .section2{
+        width: 100%;
+    }
+   .section1 .res{
+        height:300px ;
+        width: 300px;
+        border-radius:50% ;
+    }
+    .section1{
+        padding: 0;
+        gap:10px;
+        grid-template-columns: auto;
+        display:grid;
+        width: auto;
+    }
+    .ah{
+        font-size:35px ;
+    }
+    .p4{
+        line-height:25px ;
+        font-size: 25px;
+    }
+ }
+    

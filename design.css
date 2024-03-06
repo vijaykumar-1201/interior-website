@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    min-height:100vh;
+    width:100%;  
+    text-align: center; 
+    position: relative;
+    position: relative;
+}
+.box1{
+    width: 100%;
+    min-height: 100vh;
+}
+.img1{
+    width: 100%;
+    height: 100vh;
+}
+video{
+    width: 100%;
+    height:100vh ;
+    background-color:rgb(142, 140, 140);  
+    filter: brightness(100%); 
+}
+.vidio-contain{
+    width: 100%;
+    height: 100vh;
+    background-color:gainsboro;
+    border: 1px solid black ;
+}
+.vidio-contain video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.a{
+    text-decoration:none ;
+    color:black;
+}
+.logo{
+    height:50px ;
+    width:50px ;
+    border-radius:50% ;
+}
+.header{
+    width: 100%;  
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 5px 45px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.right-head{
+    display: flex;
+    font-style:oblique; 
+    gap: 20px;
+}
+/* Style for search bar container */
+.search-container {
+    display: flex;
+    width: 500px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    top:40%;
+    left: 30%;
+    position: absolute;
+}
+/* anger tag */
+.anger{
+    text-decoration: none;
+}
+/* Style for input */
+.search-container input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+/* Style for search icon button */
+.search-container button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Style for search icon */
+.search-container button i {
+    font-size: 18px;
+}
+
+.h1{
+    height: 100px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+}
+.right-head button{
+    padding: 5px;
+    width: 120px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 18px;
+}
+i{
+    font-size: 40px;
+    color:white;
+}
+.but1:hover{
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid white ;
+
+}
+.header input:checked~ .right-head{
+      background-color:orangered;
+      left: 0;
+      transition: 2s;
+}
+.input{
+    display: none;
+}
+.header i{
+    display:none;
+}
+.box{
+    background-color: darkcyan;
+    position: absolute;
+    top:67%;
+    width: 100%;
+    height:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px) {
+    .right-head{
+        position: fixed;
+        left: -100%;
+        transition: 2s;
+        background-color:cadetblue;
+        top: 63px;
+        width: 100%;
+        z-index: 999;
+        flex-direction: column;
+        height: 90vh;
+        display: grid;
+        justify-content: center;
+
+    }
+    .vidio-contain{
+        width: 100%;
+        height: 100vh;
+    }
+    .header i{
+        display: inline;
+    } 
+    .search-container{
+        width: 80%;
+        left: 10% ;
+    }
+}
+@media  screen and (max-width:500px) {
+    .h1{
+        font-size:30px ;
+    }
+    .search-container{
+        width: 80%;
+        left: 10%;
+    }
+}
+@media  screen and (min-width:800px) and (max-width:1000px) {
+    .search-container{
+        width:80% ;
+        left: 10%;
+    }
+}
+/*....................................................container1.............................................................  */
+.container1{
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom:40px ;
+}
+.img{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.i1{
+    width:500px;
+    height:300px;
+}
+.i2{
+    width:500px;
+    height:300px;
+}
+.i3{
+    width:500px;
+    height:300px;
+}
+.i4{
+    width:500px;
+    height:300px;
+}
+.i5{
+    width:500px;
+    height:300px;
+}
+.i6{
+    width:500px;
+    height:300px;
+}
+.im7{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.im2{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.im3{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.im4{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.im5{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.im6{
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.img img:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    padding:5px ;
+    border:3px solid black ;
+}
+/* ...........................................container2...................................................... */
+.container2{
+    background-color: gainsboro;
+    min-height: 50vh;
+    width: auto;
+    padding: 30px;
+    border-left:20px solid white;
+    border-right: 20px solid white;
+}
+.p5{
+    line-height: 25px;
+    font-size: 25px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100px;
+}
+.p6{
+    line-height: 25px;
+    font-size: 25px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.but{
+    width: auto;
+    padding:10px ;
+    background-color: orangered;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border: none;
+    margin-top:20px ;   
+}
+.but:hover{
+    background-color: black;
+    transition-delay: 0.5s;
+    transform: scale(1.4);
+}
+/* ...................................................container3................................ */
+.container3{
+    min-height: 100vh;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;  
+    left: 0px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.white{
+    visibility: hidden;
+    font-size:20px ;
+    line-height: 24px;
+    color:black ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.black a{
+    visibility: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about{
+    width: 40%;
+    min-height:fit-content ;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:2px solid black ;
+    border-radius: 20px;
+    position: relative;
+}
+.about:hover{
+    .white{
+        visibility: visible;
+        cursor: pointer;
+        transition-delay:1s;
+    }
+    .black a{
+        visibility: visible;
+        transition-delay:1s;
+    }
+    .space{
+        visibility: hidden;
+        transition-duration: 1s;
+    }
+    .Interior{
+        visibility: hidden;
+        transition-duration: 1s;
+    }
+    .bot{
+        visibility: hidden; 
+        transition-duration: 1s;
+    }
+}
+.space{
+    font-size: 35px;
+    color: orangered;
+    height: 50px;
+}
+.Interior{
+    font-size:20px ;
+    line-height: 25px;
+}
+.bot{
+    padding:10px ;
+    border-radius:10px ;
+    border: none;
+    font-size:20px ;
+    background-color: orangered;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:110px ;
+}
+.ttf{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    border-radius: 10px;
+    gap:10px;
+    background-color: #333;
+}
+.background{
+    width:380px;
+    height: 300px;
+}
+.group{
+    width:100% ;
+    height: 100%;
+    border-radius:7px ;
+}
+.group:hover{
+    transform: scale(-1.0);
+}
+/* ................................responce.................................................. */
+@media screen and (max-width:800px) {
+    .container3{
+        flex-direction: column;
+    }
+    .about{
+        width: 100%;
+        padding:10px ;
+    }
+    .space{
+        font-size: 25px;
+    }
+    .ttf{
+        grid-template-columns: auto;
+        width: 100%;
+        padding:10px ;
+    }
+    .background{
+        width: 100%;
+        height: auto;
+    }
+    .group{
+        width: 100%;
+        height: 100%;
+    }    
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .container3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        width: 80%;
+    }
+    .space{
+        font-size: 30px;
+    }
+    .ttf{
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding:10px ;
+    }
+    .background{
+        width: 100%;
+        height:100%;
+    }
+    .group{
+        width: 100%;
+         height: 100%;
+    }    
+    
+}

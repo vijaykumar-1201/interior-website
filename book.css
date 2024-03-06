@@ -1,0 +1,179 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width:100%;  
+    text-align: center; 
+    position: relative;
+}
+.box1{
+    width: 100%;
+    height: 100vh;
+}
+video{
+    width: 100%;
+    height:100vh ;
+    background-color:rgb(142, 140, 140);  
+    filter: brightness(100%); 
+}
+.vidio-contain{
+    width: 100%;
+    height: 100vh;
+    background-color:gainsboro;
+    border: 1px solid black ;
+}
+.vidio-contain video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.a{
+    text-decoration:none ;
+    color:black;
+}
+.logo{
+    height:50px ;
+    width:50px ;
+    border-radius:50% ;
+}
+.viedo{
+    height:100vh ;
+    width:fit-content;
+}
+.header{
+    width: 100%;  
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 8px 45px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.right-head{
+    display: flex;
+    font-style:oblique; 
+    gap: 20px;
+}
+.right-head button{
+    padding: 5px;
+    width: 120px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 22px;
+}
+i{
+    font-size: 40px;
+    color:black;
+}
+.but1:hover{
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid white ;
+
+}
+.header input:checked~ .right-head{
+      background-color:orangered;
+      left: 0;
+      transition: 2s;
+}
+.input{
+    display: none;
+}
+.header i{
+    display:none;
+}
+.box{
+    background-color: darkcyan;
+    position: absolute;
+    top:67%;
+    width: 100%;
+    height:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px) {
+    .right-head{
+        position: fixed;
+        left: -100%;
+        transition: 2s;
+        background-color:cadetblue;
+        top: 63px;
+        width: 100%;
+        z-index: 999;
+        flex-direction: column;
+        height: 90vh;
+        display: grid;
+        justify-content: center;
+
+    }
+    .vidio-contain{
+        width: 100%;
+        height: 100vh;
+    }
+    .header i{
+        display: inline;
+    }
+
+ 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    height: 100vh;
+}
+.login-box{
+    border-radius: 10px;
+    background-color: white;
+    width:400px;
+    height:350px ;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+h2{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.but{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+    border:none;
+    color: white;
+    width: 160px;
+    border-radius: 20px;
+    background-color: orangered;
+    font-size: 20px;
+}
+input{
+    padding:10px ;
+    width: 100%;
+}
+label{
+    font-size: 20px;
+    color:#83A2FF;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
