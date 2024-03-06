@@ -77,7 +77,8 @@ i{
 .but1:hover{
     cursor: pointer;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border:1px solid white ;
+    border:transparent ;
+    transform: scale(1.2);
 
 }
 .header input:checked~ .right-head{
